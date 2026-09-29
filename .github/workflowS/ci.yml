@@ -27,7 +27,7 @@ jobs:
       - name: Lint
         run: uv run ruff check src tests
 
-      - name: Type-less format check
+      - name: Format check
         run: uv run ruff format --check src tests
 
       - name: Test against live URLs
